@@ -14,13 +14,28 @@
 }
 
 .App {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
 
-  & > div {
-    flex: 1 1 auto;
-    width: 240px;
+  & #display {
+    min-height: 2.5rem;
+    line-height: 2rem;
+    padding: 0.25rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    border-radius: 0.25rem;
+    background-color: #0006;
+  }
+
+  & .pads-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  & .drum-pad {
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  & .drum-pad.playing {
+    background-color: aqua;
   }
 }
