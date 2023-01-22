@@ -17,7 +17,7 @@
     "dev": "vite --config ./config/vite.config.js",
     "lint": "prettier -w . && eslint --fix .",
     "build:public": "vite build --config ./config/public.config.js",
-    "build": "vite build",
+    "build": "vite build --config ./config/vite.config.js",
     "preview": "vite preview"
   },
   "dependencies": {
